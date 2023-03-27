@@ -8,7 +8,7 @@
 int _isdigit(char c)
 {
 	if (c >= 48 && c <= 57)
-		retrun (1);
+		return (1);
 	else
 		return (0);
 }
