@@ -2,7 +2,7 @@
 
 /**
  * _isupper - check if the char is upper.
- *
+ * @c: integer parameter (ascii code for a character)
  * Return: Always 0.
  */
 
