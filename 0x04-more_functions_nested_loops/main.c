@@ -8,9 +8,8 @@
  */
 int main(void)
 {
-	print_triangle(5);
-	print_triangle(2);
-	print_triangle(1);
-	print_triangle(0);
+	print_number(33445);
+	print_number(5);
+	print_number(22);
 	return (0);
 }
