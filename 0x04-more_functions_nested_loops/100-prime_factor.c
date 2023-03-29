@@ -8,9 +8,9 @@
 int main(void)
 {
 	long prime = 612852475143;
-	long maxPrime = 2;	
+	long maxPrime = 2;
 
-	while (maxPrime <= (prime / 2))
+	while (maxPrime <= prime)
 	{
 		if (prime % maxPrime == 0)
 		{
