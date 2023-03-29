@@ -9,16 +9,20 @@
 
 void print_number(int n)
 {
-	int numLength = floor(log10(n)) + 1;
-	int i;
+	unsigned int num;
 
-	for (i = 1; i <= numLength; i++)
+	if (n < 0)
 	{
-		int power = pow(10, i);
-		int num = n % power;
+		num = -n;
+		_putchar('-');
+	{
 
-		_putchar(48 + num);
-	}
+	else
+		num = n;
 
-	_putchar(10);
+	if (num / 10)
+		print_number(num / 10);
+
+	_putchar((num % 10) + '0');
 }
+
