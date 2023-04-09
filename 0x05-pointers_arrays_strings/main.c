@@ -8,10 +8,11 @@
  */
 int main(void)
 {
-	int a = 1;
-	int b = 2;
-   	swap_int(&a, &b);
-	printf("%d\n", a);
-	printf("%d\n", b);
+	char *str;
+    int len;
+
+    str = "My first strlen!";
+    len = _strlen(str);
+    printf("%d\n", len);
     return (0);
 }
