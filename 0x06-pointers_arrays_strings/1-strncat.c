@@ -9,22 +9,22 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-    int i, destLen;
+	int i, destLen;
 
-    destLen = 0;
+	destLen = 0;
 
-    while (dest[destLen] != '\0')
-        destLen++;
+	while (dest[destLen] != '\0')
+	destLen++;
 
-    for (i = 0; i < n; i++)
-    {
-        if (src[i] == '\0')
-            break;
-        dest[destLen++] = src[i];
-    }
+	for (i = 0; i < n; i++)
+	{
+		if (src[i] == '\0')
+			break;
+		dest[destLen++] = src[i];
+	}
 
-    dest[destLen] = '\0';
+	dest[destLen] = '\0';
 
-    return (dest);
+	return (dest);
 }
 
