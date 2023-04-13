@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates to string with a given max bytes
+ * _strncpy - copy a string to dest 
+ * with fixed amount of bytes
  * @src: copied string
  * @dest: destintion string
  * @n: max bytes
