@@ -15,6 +15,8 @@ char *leet(char *s)
 
 	for (a = 0; s[a] != '\0'; a++)
 	{
+		c = 0;
+
 		for (b = 0; b < sizeof(charList); b++)
 		{
 			if (charList[b] == s[a])
