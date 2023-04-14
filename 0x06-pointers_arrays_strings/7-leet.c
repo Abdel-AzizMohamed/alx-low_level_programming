@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * leet - encode string into 1337 
+ * leet - encode string into 1337
  * @s: the string
  * Return: encoded string
  */
