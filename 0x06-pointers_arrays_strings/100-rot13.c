@@ -8,18 +8,18 @@
  */
 char *rot13(char *s)
 {
-	unsigned int a, b;	
+	unsigned int a, b;
 
-	char charListFirst[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char charListSecond[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzABCDEFGHIJKLM";
+	char c1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char c2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (a = 0; a < sizeof(s); a++)
 	{
-		for (b = 0; b < sizeof(charListFirst); b++)
+		for (b = 0; b < sizeof(c1); b++)
 		{
-			if (s[a] == charListFirst[b])
+			if (s[a] == c1[b])
 			{
-				s[a] = charListSecond[b];
+				s[a] = c2[b];
 				break;
 			}
 		}
