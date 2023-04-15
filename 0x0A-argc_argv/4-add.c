@@ -64,7 +64,7 @@ int checkNum(char *s)
 			return (0);
 		i++;
 	}
-	
+
 	return (1);
 }
 
