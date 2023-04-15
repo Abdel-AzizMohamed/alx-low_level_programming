@@ -14,15 +14,15 @@ int base10(int n)
 	base = 10;
 
 	if (n == 0)
-        base = 1;
+		base = 1;
 
 	while (n > 1)
 	{
 		base *= 10;
-        n--;
+		n--;
 	}
 
-	return base;
+	return (base);
 
 }
 
@@ -41,7 +41,8 @@ void print_number(int n)
 	if (n == 0)
 		_putchar(48);
 
-	else{
+	else
+	{
 		if (n < 0)
 		{
 			n *= -1;
