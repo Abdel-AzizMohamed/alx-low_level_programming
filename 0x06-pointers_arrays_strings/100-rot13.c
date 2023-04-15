@@ -13,9 +13,9 @@ char *rot13(char *s)
 	char c1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char c2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (a = 0; a < sizeof(s); a++)
+	for (a = 0; s[i] != '\0'; a++)
 	{
-		for (b = 0; b < sizeof(c1); b++)
+		for (b = 0; c1[b] != '\0'; b++)
 		{
 			if (s[a] == c1[b])
 			{
