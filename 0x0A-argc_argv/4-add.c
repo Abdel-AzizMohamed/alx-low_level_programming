@@ -47,6 +47,28 @@ int _atoi(char *s)
 }
 
 /**
+ * checkNum - check if there is a char
+ * @s: string to be converted
+ * Return: 0 if thers is char
+ * else 1
+ */
+int checkNum(char *s)
+{
+	int i;
+
+	i = 0;
+
+	while (s[i] != '\0')
+	{
+		if (s[i] < '0' || s[i] > '9')
+			return (0);
+		i++;
+	}
+	
+	return (1);
+}
+
+/**
  * main - multiplies 2 numbers given by
  * command line
  * @argc: number of params in command line
@@ -60,12 +82,16 @@ int main(int argc, char *argv[])
 	result = 0;
 
 	if (argc == 1)
+	{
 		printf("0\n");
+		return (0);
+	}
+
 	else
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (_atoi(argv[i]) == 0)
+			if (checkNum(argv[i]) == 0)
 			{
 				printf("Error\n");
 				return (1);
