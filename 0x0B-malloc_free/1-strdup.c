@@ -3,8 +3,8 @@
 
 
 /**
- * _strdup - returns a pointer to a
- * newly allocated space in memory 
+ * _strdup - returns a pointer to
+ * a newly allocated space in memory
  * @str: the pointer that will be dup
  * Return: NULL if str=NULL
  * else dup string
@@ -26,7 +26,7 @@ char *_strdup(char *str)
 
 	for (i = 0; i < len; i++)
 		*(ptr + i) = *(str + i);
-	
+
 	*(ptr + i) = '\0';
 
 	return (ptr);
