@@ -10,7 +10,7 @@
 */
 char **strtow(char *str)
 {
-	int i, j, splits, start, end;
+	int i, j = 0, splits, start = 0, end = 0;
 	char **ptr;
 
 	i = 0;
@@ -31,10 +31,6 @@ char **strtow(char *str)
 		return (NULL);
 
 	i = 0;
-	j = 0;
-	start = 0;
-	end = 0;
-
 	while (str[end] != '\0')
 	{
 		if (str[end] == ' ')
