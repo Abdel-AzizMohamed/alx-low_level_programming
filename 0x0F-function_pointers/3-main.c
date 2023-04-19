@@ -1,14 +1,12 @@
 #include "3-calc.h"
-#include <stdio.h>
-#include <stdlib.h>
-
 
 /**
- * main - perform op in a given args
- * @argc: num of arguments
- * @argv: arguments
- * Return: Alawas (0)
-*/
+ * main - program that perfroms simple operations
+ * @argc: number of arguments
+ * @argv: array of arguments
+ *
+ * Return: Always 0 (Success)
+ */
 int main(int argc, char *argv[])
 {
 	int arg1, arg2, result;
