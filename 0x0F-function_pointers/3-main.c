@@ -5,6 +5,8 @@
 
 /**
  * main - perform op in a given args
+ * @argc: num of arguments
+ * @argv: arguments
  * Return: Alawas (0)
 */
 int main(int argc, char *argv[])
@@ -15,7 +17,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
- 	int n1 = atoi(argv[1]);
+	int n1 = atoi(argv[1]);
 	int n2 = atoi(argv[3]);
 	char *op = argv[2];
 	int (*funOp)(int, int);
@@ -34,7 +36,6 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%d\n", funOp(n1, n2));
-	
 
 	return (0);
 }
