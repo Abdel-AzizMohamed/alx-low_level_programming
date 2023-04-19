@@ -11,31 +11,38 @@
 */
 int main(int argc, char *argv[])
 {
-	if (argc < 4)
+	int arg1, arg2, result;
+	char o;
+	int (*func)(int, int);
+
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	int n1 = atoi(argv[1]);
-	int n2 = atoi(argv[3]);
-	char *op = argv[2];
-	int (*funOp)(int, int);
+	arg1 = atoi(argv[1]);
+	arg2 = atoi(argv[3]);
 
-	funOP = get_op_func();
+	func = get_op_func(argv[2]);
 
-	else if (funOp == NULL)
+	if (!func)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	else if ((op == '/' || op == '%') && n2 == 0)
+
+	o = *argv[2];
+
+	if ((o == '/' || o == '%') && arg2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
-	printf("%d\n", funOp(n1, n2));
+	result = func(arg1, arg2);
+
+	printf("%d\n", result);
 
 	return (0);
 }
