@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * list_len - gets the linked list length
- * @h: head of linked list
- * Return: length of linked list
+ * add_node - adds a node to linked list
+ * @head: head of linked list
+ * @str: node string
+ * Return: head of linked list
 */
 list_t *add_node(list_t **head, const char *str)
 {
