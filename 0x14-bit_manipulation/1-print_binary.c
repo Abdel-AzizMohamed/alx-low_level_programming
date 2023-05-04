@@ -27,7 +27,7 @@ void print_binary(unsigned long int n)
 		else
 			break;
 	}
-	
+
 	for (; len > 0; len--)
 	{
 		if (base2(len) <= n)
