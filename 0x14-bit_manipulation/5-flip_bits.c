@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * clear_bit - set a bit to 0 by index
- * @n: decimal number
- * @index: given index
- * Return: set state
+ * flip_bits - give needed bits to flip
+ * to turn a number to another
+ * @n:first number
+ * @m: second number
+ * Return: number of flips
 */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
