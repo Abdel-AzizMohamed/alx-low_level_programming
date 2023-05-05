@@ -1,12 +1,16 @@
 #include "main.h"
 
-
+/**
+ * get_endianness - get the endianness
+ * Return: endianness type.
+*/
 int get_endianness(void)
 {
-   unsigned int i = 1;
-   char *c = (char*)&i;
-   if (*c)   
+	unsigned int n = 1;
+	char *ch = (char *)&n;
+
+	if (*ch)
 		return (1);
-   else
+	else
 		return (0);
 }
