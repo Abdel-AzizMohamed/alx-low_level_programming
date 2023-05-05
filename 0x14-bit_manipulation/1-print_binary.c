@@ -2,22 +2,6 @@
 
 
 /**
- * base2_long - get the 2 power of number
- * @count: number
- * Return: 2 power of count
-*/
-unsigned long int base2_long(unsigned long int count)
-{
-	unsigned long int i, base = 1;
-
-	for (i = 1; i < count; i++)
-		base *= 2;
-
-	return (base);
-}
-
-
-/**
  * print_binary - prints out converted
  * decimal to binary
  * @n: decimal number
@@ -25,8 +9,8 @@ unsigned long int base2_long(unsigned long int count)
 */
 void print_binary(unsigned long int n)
 {
-	unsigned long int tmp = 1;
-	int len = 1;
+	unsigned long int tmp;
+	int shift = 0;
 
 	if (n == 0)
 	{
@@ -34,24 +18,13 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	while (1)
-	{
-		if (tmp * 2 <= n)
-		{
-			tmp *= 2;
-			len++;
-		}
-		else
-			break;
-	}
+	for (tmp = n; tmp > 0; shift++)
+		tmp >>= 1;
 
-	for (; len > 0; len--)
+	for (; shift >= 0; shift--)
 	{
-		if (base2_long(len) <= n)
-		{
-			n -= base2_long(len);
+		if ((n >> shift) & 1)
 			_putchar('1');
-		}
 		else
 			_putchar('0');
 	}
