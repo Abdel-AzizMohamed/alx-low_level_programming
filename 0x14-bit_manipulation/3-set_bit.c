@@ -1,47 +1,22 @@
 #include "main.h"
 
-
+/**
+ * set_bit - set a bit to 1 by index
+ * @n: decimal number
+ * @index: given index
+ * Return: set state
+*/
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int tmp;
-	int shift = 0;
-	int *bits_list;
+	unsigned long int base2 = 1;
 
 	if (index > 64)
 		return (-1);
 
-	if (*n == 0)
-	{
-		tmp = 1;
-		for (; index > 0; index--)
-			tmp *= 2;
-		*n = tmp;
-		return (1);
-	}
-	bits_list = malloc(sizeof(int) * (int)index);
+	for (; index > 0; index--)
+		base2 *= 2;
 
-	if (!bits_list)
-	{
-		free(bits_list);
-		return (-1);
-	}
+	*n += base2;
 
-	for (tmp = *n; shift < (int)index; shift++)
-	{
-		bits_list[shift] = tmp & 1;
-		tmp >>= 1;
-	}
-
-	tmp |= 1;	
-
-	for (; shift > 0; shift--)
-	{
-		tmp <<= 1;
-		if (bits_list[shift] & 1)
-			tmp |= 1;
-	}
-
-	*n = tmp;
-	free(bits_list);
 	return (1);
 }
