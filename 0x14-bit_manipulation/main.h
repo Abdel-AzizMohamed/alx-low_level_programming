@@ -8,6 +8,7 @@ unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
 int strLen(const char *str);
 unsigned int base2(unsigned int count);
+unsigned long int base2_long(unsigned long int count);
 int _putchar(char c);
 
 #endif

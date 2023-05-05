@@ -6,9 +6,9 @@
  * @count: number
  * Return: 2 power of count
 */
-unsigned int base2(unsigned int count)
+unsigned long int base2_long(unsigned long int count)
 {
-	unsigned int i, base = 1;
+	unsigned long int i, base = 1;
 
 	for (i = 1; i < count; i++)
 		base *= 2;
@@ -47,9 +47,9 @@ void print_binary(unsigned long int n)
 
 	for (; len > 0; len--)
 	{
-		if (base2(len) <= n)
+		if (base2_long(len) <= n)
 		{
-			n -= base2(len);
+			n -= base2_long(len);
 			_putchar('1');
 		}
 		else
