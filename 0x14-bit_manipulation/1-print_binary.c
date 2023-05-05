@@ -2,7 +2,7 @@
 
 
 /**
- * base2 - get the 2 power of number
+ * base2_long - get the 2 power of number
  * @count: number
  * Return: 2 power of count
 */
