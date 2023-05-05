@@ -1,3 +1,6 @@
+#include "main.h"
+
+
 /**
  * base2 - get the 2 power of number
  * @count: number
