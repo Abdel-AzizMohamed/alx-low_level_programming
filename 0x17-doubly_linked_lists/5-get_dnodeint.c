@@ -4,7 +4,7 @@
 /**
  * get_dnodeint_at_index - get node at given index
  * @head: head of the list
- * index: given index
+ * @index: given index
  *
  * Return: node at given index else NULL
 */
