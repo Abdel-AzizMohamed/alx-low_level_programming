@@ -9,3 +9,5 @@ this project is for learing about hash tables in c
 this function is for creating a hash table and return it
 ### (1-djb2.c)
 this function hashs given buffer by using djb2 algorithm
+### (2-key_index.c)
+this function returns the index of a given key
