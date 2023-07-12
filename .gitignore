@@ -14,3 +14,4 @@
 #my ignore
 flags
 debug_commands
+main.c
