@@ -15,3 +15,5 @@ this function returns the index of a given key
 this function addes|update element in a hash table
 ### (4-hash_table_get.c)
 this function retrieves a value associated with a key.
+### (5-hash_table_print.c) 
+this function prints out all hash table values
