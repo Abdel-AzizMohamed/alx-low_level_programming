@@ -11,3 +11,7 @@ this function is for creating a hash table and return it
 this function hashs given buffer by using djb2 algorithm
 ### (2-key_index.c)
 this function returns the index of a given key
+### (3-hash_table_set.c)
+this function addes|update element in a hash table
+### (4-hash_table_get.c)
+this function retrieves a value associated with a key.
