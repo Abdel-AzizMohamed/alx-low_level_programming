@@ -3,7 +3,7 @@
 
 /**
  * hash_table_set - insert|update element to hash table
- * @hash: table to insert into
+ * @ht: table to insert into
  * @key: given element key
  * @value: given element value
  *
