@@ -17,3 +17,5 @@ this function addes|update element in a hash table
 this function retrieves a value associated with a key.
 ### (5-hash_table_print.c) 
 this function prints out all hash table values
+### (6-hash_table_delete.c) 
+this function delete(free) a hash table
