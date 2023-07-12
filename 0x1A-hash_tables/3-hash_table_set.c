@@ -21,7 +21,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!new_ele)
 		return (0);
 	new_ele->value = strdup(value);
-	if (!new->value)
+	if (!(new_ele->value))
 	{
 		free(new_ele);
 		return (0);
@@ -30,7 +30,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((unsigned char *) key, ht->size);
 	
 	new_ele->key = strdup(key);
-	if (!new_ele->key)
+	if (!(new_ele->key))
 	{
 		free(new_ele);
 		free(new_ele->value);
